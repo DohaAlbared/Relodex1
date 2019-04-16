@@ -144,22 +144,6 @@ class MenuButton extends State<menubutton>{
               child : Row(children: <Widget>[
 
                 Padding(
-                    padding: EdgeInsets.only(left:  MediaQuery.of(context).size.width/15, right: MediaQuery.of(context).size.width/2),
-                    child :Container( child  : Switch(value: this.val2, onChanged: (bool _value){
-                      setState(() {
-                        if(this.val2 = true){
-                          this.val2 = _value;
-                          ServiceDisplay(this.u.favorites, this.u);
-                        }
-                        else{
-                          this.val2 = _value;
-                          ServiceDisplay(this.lst, this.u);
-
-                        }
-                      });
-                    }),)
-                ),
-                Padding(
                   padding: EdgeInsets.only(left:  0),
                   child :  Container(
                     margin: EdgeInsets.only(bottom: 20, top: 15),
@@ -225,5 +209,4 @@ class MenuButton extends State<menubutton>{
 //    );
   }
   }
-
 
